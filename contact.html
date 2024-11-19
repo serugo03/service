@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire contact</title>
+	
+	<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+		
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+	    background-color: #f0f0f0;
+    }
+
+    th {
+        background-color: #f0f0f0;
+    }
+
+    select, input[type="date"], input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    p {
+        color: green;
+        text-align: center;
+        font-weight: bold;
+    }
+	
+</style>
+
+</head>
+<body>
+
+<br>
+<center>
+<h1> formulaire D'insertion  des contacts </h1>
+
+<form Method="POST" action="">
+<table>
+<div>
+ 
+<tr> <th> Nom </th>
+<td> <input type ="text" name="Nom" placeholder="Nom" required autofocus pattern="[A-Za-zÀ-ÿ\s]{2,20}" /> </td>
+</tr>
+<tr> <th> Prenom </th>
+<td> <input type ="text" name="Prenom" placeholder="prenom" required autofocus pattern="[A-Za-zÀ-ÿ\s]{2,20}"/> </td>
+</tr>
+<tr> <th> Tel </th>
+<td> <input type ="tel" name="Tel" placeholder="Tel" /> </td>
+</tr>
+<tr>
+<th> email </th> 
+<td> <input type ="email" name="email" placeholder="email" /> </td>
+</tr>
+<tr> <th> message </th>
+<td> <input type ="text" name="message" placeholder="message" required /> </td>
+</tr>
+
+
+<tr> <th> </th>
+
+<td>
+	 <input type="submit" name="Envoyer" value="valider"/>
+    
+</td>
+</tr>
+</div>
+</table>
+
+</form>
+
+    
+	</center>
+</body>
+</html>
